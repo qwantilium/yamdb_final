@@ -1,4 +1,5 @@
 attrs==21.2.0
+asgiref==3.2.10
 certifi==2021.5.30
 charset-normalizer==2.0.4
 Django==2.2.16
@@ -11,6 +12,7 @@ numpy==1.21.1
 packaging==21.0
 pandas==1.3.1
 pluggy==0.13.1
+psycopg2-binary==2.8.6
 py==1.10.0
 PyJWT==2.1.0
 pyparsing==2.4.7
@@ -27,4 +29,3 @@ urllib3==1.26.6
 asgiref==3.2.10
 gunicorn==20.0.4
 psycopg2-binary==2.8.6
-
