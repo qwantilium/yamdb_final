@@ -2,9 +2,9 @@ from datetime import datetime
 
 from django.contrib.auth.models import AbstractUser
 from django.contrib.auth.validators import UnicodeUsernameValidator
+from django.core.exceptions import ValidationError
 from django.core.validators import RegexValidator
 from django.db import models
-from django.core.exceptions import ValidationError
 
 
 class User(AbstractUser):
