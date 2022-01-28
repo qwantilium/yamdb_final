@@ -38,7 +38,7 @@ jobs:
     steps:
       - name: cd api_yamdb
         run: |
-          cd api_yamdb
+          cd api_yamdb/
       - name: Check out the repo
         uses: actions/checkout@v2 # Проверяет доступность репозитория DockerHub для workflow
       - name: Set up Docker Buildx
