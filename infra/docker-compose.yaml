@@ -1,5 +1,5 @@
 
-version: '3.8'
+version: '3.7'
 
 services:
   db:
@@ -53,11 +53,10 @@ services:
       # Контейнер nginx должен быть запущен после контейнера web
       - web
   dockerpush:
-      build: .
-      image: quantumcon/yamdb_final
-      depends_on:
-        # Контейнер nginx должен быть запущен после контейнера web
-        - nginx
+    build: .
+    image: quantumcon/yamdb_final
+    depends_on:
+    - nginx
 
 volumes:
   postgres_data:
