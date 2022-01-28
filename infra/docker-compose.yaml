@@ -52,6 +52,12 @@ services:
     depends_on:
       # Контейнер nginx должен быть запущен после контейнера web
       - web
+  dockerpush:
+      build: .
+      image: quantumcon/yamdb_final
+      depends_on:
+        # Контейнер nginx должен быть запущен после контейнера web
+        - nginx
 
 volumes:
   postgres_data:
