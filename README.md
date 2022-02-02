@@ -4,6 +4,7 @@ YaMDB - социальная сеть, позволяющая делиться �
 
 
 ![Status of build](https://github.com/qwantilium/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?branch=master)
+
 ip server 51.250.28.160
 
 Что можно делать???
