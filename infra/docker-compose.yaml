@@ -54,7 +54,7 @@ services:
       - web
   dockerpush:
     build: .
-    image: quantumcon/yamdb_final
+    image: quantumcon/yamdb_final:v1.3
     depends_on:
     - nginx
 

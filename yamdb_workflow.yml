@@ -49,7 +49,7 @@ jobs:
         uses: docker/build-push-action@v2 # Выполняет push образа в DockerHub
         with:
           push: true
-          tags: quantumcon/yamdb_final:latest
+          tags: quantumcon/yamdb_final:v1.3
   deploy:
     runs-on: ubuntu-latest
     needs: build_and_push_to_docker_hub
