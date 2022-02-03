@@ -3,7 +3,7 @@ version: '3.7'
 
 services:
   db:
-    image: postgres:12.4
+    image: postgres:12-alpine
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     env_file:
@@ -17,11 +17,11 @@ services:
     volumes:
       # Контейнер web будет работать с данными, хранящиеся в томе static_value, 
       # через свою директорию /code/static/
-      - static_value:/code/static/
+      - static_value:/app/static/
 
       # Данные, хранящиеся в томе media_value, будут доступны в контейнере web 
       # через директорию /code/media/
-      - media_value:/code/media/
+      - media_value:/app/media/
     depends_on:
       - db
     env_file:

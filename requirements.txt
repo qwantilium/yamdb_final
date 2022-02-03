@@ -1,4 +1,5 @@
 attrs==21.2.0
+asgiref==3.2.10
 certifi==2021.5.30
 charset-normalizer==2.0.4
 Django==2.2.16
@@ -27,4 +28,3 @@ urllib3==1.26.6
 asgiref==3.2.10
 gunicorn==20.0.4
 psycopg2-binary==2.8.6
-
