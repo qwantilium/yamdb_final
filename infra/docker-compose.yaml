@@ -15,7 +15,9 @@ services:
       - infra/.env
 
   web:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
     image: quantumcon/yamdb_final:v1.3
     restart: always
     volumes:
