@@ -12,10 +12,11 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     env_file:
-      - .env
+      - infra/.env
 
   web:
     build: .
+    image: quantumcon/yamdb_final:v1.3
     restart: always
     volumes:
       - static_value:/app/static/
@@ -23,7 +24,7 @@ services:
     depends_on:
       - db
     env_file:
-      - .env
+      - infra/.env
 
   nginx:
     image: nginx:alpine
