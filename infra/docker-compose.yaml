@@ -15,9 +15,6 @@ services:
       - .env
 
   web:
-    build:
-      context: ./api_yamdb
-      dockerfile: Dockerfile
     image: quantumcon/yamdb_final:v1.3
     restart: always
     volumes:
