@@ -15,6 +15,7 @@ services:
       - .env
 
   web:
+    image: quantumcon/yamdb_final:v1.3
     build:
       context: .
       dockerfile: Dockerfile
