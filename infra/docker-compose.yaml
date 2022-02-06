@@ -15,10 +15,7 @@ services:
       - .env
 
   web:
-    image: quantumcon/yamdb_final:v1.3
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: quantumcon/yamdb_final:v1.4
     restart: always
     volumes:
       - static_value:/app/static/
