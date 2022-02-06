@@ -51,7 +51,7 @@ jobs:
           context: api_yamdb/
           file: api_yamdb/Dockerfile
           push: true
-          tags: quantumcon/yamdb_final:v1.3
+          tags: quantumcon/yamdb_final:v1.4
 
   deploy:
     runs-on: ubuntu-latest

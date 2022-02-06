@@ -5,7 +5,7 @@ YaMDB - социальная сеть, позволяющая делиться �
 
 ![Status of build](https://github.com/qwantilium/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?branch=master)
 
-ip server 51.250.28.160
+ip server 51.250.19.13
 
 Что можно делать???
 1. Получать список категорий (/api/v1/categories/). Если вы администратор, можно добавлять новые.
