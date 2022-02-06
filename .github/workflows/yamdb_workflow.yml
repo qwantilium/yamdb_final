@@ -59,8 +59,6 @@ jobs:
     steps:
       - name: executing remote ssh commands to deploy
         uses: appleboy/ssh-action@master
-        context: api_yamdb/infra
-          file: api_yamdb/infra/docker-compose.yaml
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
