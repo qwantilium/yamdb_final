@@ -48,6 +48,8 @@ jobs:
       - name: Push to Docker Hub
         uses: docker/build-push-action@v2 # Выполняет push образа в DockerHub
         with:
+          context: api_yamdb/
+          file: api_yamdb/Dockerfile
           push: true
           tags: quantumcon/yamdb_final:v1.3
 
@@ -58,8 +60,6 @@ jobs:
       - name: executing remote ssh commands to deploy
         uses: appleboy/ssh-action@master
         with:
-          context: ./api_yamdb
-          file: ./api_yamdb/Dockerfile
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
